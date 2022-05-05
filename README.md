@@ -18,12 +18,107 @@ Text-to-text transfer transformer (T5) is a new approach for natural language un
 
 ## Speech on the tec-1
 
-We have https://github.com/SteveJustin1963/tec-SPEECH that allows us to make phonetic sounds, but we have to write the sound strings to drive the chip. We need a very simple ai system. We could write code to call an API from a paid site like OpenAI.com to do the hard lifting, but thats not fun for the Z80, what NLP text generators are there for 8 bit computers? There a few, most popular include:
+We have https://github.com/SteveJustin1963/tec-SPEECH that allows us to make phonetic sounds, but we have to write the sound strings to drive the chip. We need a very simple ai system. We could write code to call an API from a paid site like OpenAI.com to do the hard lifting, but thats not fun for the Z80, what NLP text generators are there for 8 bit computers?  well no, sad. ok The Natural Language Toolkit (NLTK) with Python is one of the leading tools in NLP model building. maybe we can build from that. an example of a program using .py to do NLP.
 
-- NLP-8: https://github.com/abisee/nlp-8
-- NLP-8bit: https://github.com/hankcs/nlp-8bit
-- NLP-16: https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/nlp/nlp_16.py
-- NLP-32: https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/nlp/nlp_32.py
+
+```
+// The following is a program that uses NLTK to perform NLP tasks such as tokenization and POS tagging:
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.tag import pos_tag
+text = "I am learning NLP with NLTK"
+tokens = word_tokenize(text)
+tags = pos_tag(tokens)
+print(tags)
+```
+
+or
+
+```
+The following is a program that uses NLTK to perform NLP tasks such as sentence parsing and semantic analysis:
+import nltk
+from nltk.parse import stanford
+from nltk.sem import relextract
+text = "I am learning NLP with NLTK"
+sentences = nltk.sent_tokenize(text)
+parser = stanford.StanfordParser(model_path="edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz")
+parsed_sentences = parser.raw_parse_sents(sentences)
+for sentence in parsed_sentences:
+print(sentence)
+relextract.demo()
+```
+
+### what is  NLP text  
+
+NLP text is a type of text that can be processed by natural language processing algorithms. There are many different algorithms used for natural language processing, but some of the most common ones include 
+- part-of-speech tagging
+- parsing
+- sentence segmentation
+ 
+## some Python code for these;
+
+
+### tagging:
+```
+tagger = nltk.pos_tag(nltk.word_tokenize("This is a sentence."))
+print(tagger)
+```
+
+### Parsing:
+
+```
+parser = nltk.RegexpParser("NP: {<DT>?<JJ>*<NN>}")
+tree = parser.parse(tagger)
+print(tree)
+```
+
+### Sentence segmentation:
+```
+sent_tokenizer = nltk.data.load("tokenizers/punkt/english.pickle")
+text = "This is a sentence. This is another sentence."
+print(sent_tokenizer.tokenize(text))  
+```
+
+### Tokenization:
+```
+tokenizer = nltk.tokenize.treebank.TreebankWordTokenizer()
+text = "This is a sentence."
+print(tokenizer.tokenize(text)) 
+```
+
+### Stemming:
+```
+stemmer = nltk.stem.PorterStemmer()
+text = "This is a sentence."
+print([stemmer.stem(token) for token in tokenizer.tokenize(text)]) 
+```
+### Lemmatization:
+```
+lemmatizer = nltk.stem.WordNetLemmatizer()
+text = "This is a sentence."
+print([lemmatizer.lemmatize(token) for token in tokenizer.tokenize(text)]) 
+stopword removal:
+stopwords = nltk.corpus.stopwords.words("english")
+text = "This is a sentence."
+print([token for token in tokenizer.tokenize(text) if token not in stopwords]) 
+n-grams:
+text = "This is a sentence."
+tokens = tokenizer.tokenize(text)
+for i in range(len(tokens) - 1):
+   print(tokens[i], tokens[i+1])
+bigrams = nltk.bigrams(tokens)
+for bigram in bigrams:
+   print(bigram) 
+collocations = nltk.collocations.BigramAssocMeasures()
+finder = nltk.collocations.BigramCollocationFinder.from_words(tokens)
+finder.nbest(collocations.likelihood_ratio, 2)
+```
+
+
+
+
+
+
 
 
 ## Ref 
