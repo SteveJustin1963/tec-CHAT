@@ -18,7 +18,12 @@ Text-to-text transfer transformer (T5) is a new approach for natural language un
 
 ## Speech on the tec-1
 
-We have https://github.com/SteveJustin1963/tec-SPEECH that allows us to make phonetic sounds, but we have to write the sound strings to drive the chip. We need a very simple ai system. We could write code to call an API from a paid site like OpenAI.com to do the hard lifting, but thats not fun for the Z80. 
+We have https://github.com/SteveJustin1963/tec-SPEECH that allows us to make phonetic sounds, but we have to write the sound strings to drive the chip. We need a very simple ai system. We could write code to call an API from a paid site like OpenAI.com to do the hard lifting, but thats not fun for the Z80, what NLP text generators are there for 8 bit computers? There a few, most popular include:
+
+- NLP-8: https://github.com/abisee/nlp-8
+- NLP-8bit: https://github.com/hankcs/nlp-8bit
+- NLP-16: https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/nlp/nlp_16.py
+- NLP-32: https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/nlp/nlp_32.py
 
 
 ## Ref 
