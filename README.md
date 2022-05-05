@@ -18,3 +18,5 @@ The T5 transformer is a neural network model that is trained on a large amount o
 1. https://en.wikipedia.org/wiki/ELIZA
 2. https://web.njit.edu/~ronkowit/eliza.html
 3. https://towardsdatascience.com/poor-mans-gpt-3-few-shot-text-generation-with-t5-transformer-51f1b01f843e
+4. https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
+5. 
