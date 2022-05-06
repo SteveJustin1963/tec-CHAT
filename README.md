@@ -39,9 +39,6 @@ Google is using the T5 text-to-text transfer learning algorithm to improve the p
 
 Text-to-text transfer transformer (T5) is a new approach for natural language understanding (NLU) that can be used to read and comprehend any text. It was developed by Google Research and is based on the transformer architecture. T5 is trained on a large amount of text data in order to learn the general knowledge about the world. This allows it to transfer that knowledge to any text, regardless of the domain or the task. For example, T5 can be used to generate summaries of news articles, generate descriptions of images, or answer questions based on a passage of text. T5 has shown promising results on a variety of NLU tasks, including question answering, text classification, and text generation. In addition, T5 is efficient to train and can be used on a variety of hardware platforms, including CPUs, GPUs, and TPUs. Overall, T5 is a promising new approach for NLU that has the potential to revolutionize the field.[5]
 
-### Project
-
-We have https://github.com/SteveJustin1963/tec-SPEECH that allows us to make phonetic sounds, but we have to write the sound strings to drive the chip. We need a very simple ai system. We could write code to call an API from a paid site like OpenAI.com to do the hard lifting, but thats not fun for the Z80, what NLP text generators are there for 8 bit computers?  well none, sad. 
 
 We for computers is ASCII code, eg letter ‘A’ is 65. ASCII is the traditional encoding system, which is based on the English characters. Collection of such characters is generally referred to as token in NLP. The easiest way to represent any text in an NLP pipeline is by one-hot encoded vector representation. If a sentence contains a certain word then the corresponding entry in the vector is represented as “1” otherwise it’s “0”. For example, let’s consider the following two sentences:
 
@@ -61,6 +58,10 @@ One-hot encoded vectors are useful for representing words for classification tas
 Word embeddings are often used as the input layer for deep learning models.
 They can be learned from scratch or pre-trained on large datasets such as Google’s word2vec.
 Pre-trained word embeddings are typically used because they can be trained on much larger datasets than what is available for most NLP tasks. 
+
+### Project
+
+We have https://github.com/SteveJustin1963/tec-SPEECH that allows us to make phonetic sounds, but we have to write the sound strings to drive the chip. We need a very simple ai system. We could write code to call an API from a paid site like OpenAI.com to do the hard lifting, but thats not fun for the Z80, what NLP text generators are there for 8 bit computers?  We may even need Speech recognitionto convert audio into text, save typing.
 
 
 ## Ref 
