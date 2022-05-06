@@ -45,14 +45,11 @@ We have https://github.com/SteveJustin1963/tec-SPEECH that allows us to make pho
 
 We for computers is ASCII code, eg letter ‘A’ is 65. ASCII is the traditional encoding system, which is based on the English characters. Collection of such characters is generally referred to as token in NLP. The easiest way to represent any text in an NLP pipeline is by one-hot encoded vector representation. If a sentence contains a certain word then the corresponding entry in the vector is represented as “1” otherwise it’s “0”. For example, let’s consider the following two sentences:
 
+![image](https://user-images.githubusercontent.com/58069246/167066937-d52dd4c2-fe07-49ce-ab7c-95c7e7eec14f.png)
 
+![image](https://user-images.githubusercontent.com/58069246/167066963-46192da6-9aa4-4ae1-8d7c-055b1a86fdaa.png)
 
-
-
-
- 
-
-
+representation words as binary vectors...every word is represented with zero except the current word with 1. a thousand unique words require a vector of 1000. NLP systems have a dictionary of words, where each word is given an integer representation. So the phrase “natural language processing is the best field!” could be represented as “2 13 6 34 12 22 90”. Text preprocessing is the process of cleaning and standardizing text data before it can be used for further analysis. This typically involves removing unwanted characters, such as punctuation and whitespace, and converting the text to a uniform format, such as lowercase. Text normalization is the process of transforming text into a canonical form that can be used for further processing. The goals of text normalization include reducing dimensionality, noise, and ambiguity, and improving the interpretability of text. Tokenization is the process of converting a piece of text into a list of words or special characters which have meaning in natural language. Word embeddings are a type of word representation that allows words with similar meaning to have a similar representation. They are a dense vector representation of words that captures semantic relationships between words. Word embeddings can be used to improve the performance of many NLP tasks such as text classification, part-of-speech tagging, named entity recognition, and machine translation.
 
 
 
