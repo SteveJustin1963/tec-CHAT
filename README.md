@@ -113,7 +113,66 @@ collocations = nltk.collocations.BigramAssocMeasures()
 finder = nltk.collocations.BigramCollocationFinder.from_words(tokens)
 finder.nbest(collocations.likelihood_ratio, 2)
 ```
+seems using Python may be the way to go then convert it down to mint, from [7] NLP is a process of extracting information from text data. It can be used to find important features in text data, such as keywords, topics, and sentiment. NLP can also be used to automatically generate text, such as summaries and translations. There are many Python libraries available for NLP, including NLTK, spaCy, and gensim. These libraries can be used to preprocess text data, extract features, and train models. by studying these methods we may come up with a Mint way.
 
+### NLTK 
+is a Python library for natural language processing. It can be used to preprocess text data, extract features, and train models.
+```
+import nltk
+
+# Preprocess text data
+text = "This is a sample text."
+tokens = nltk.word_tokenize(text)
+
+# Extract features
+nltk.pos_tag(tokens)
+
+# Train models
+nltk.NaiveBayesClassifier.train(tokens)
+```
+
+### spaCy
+is a Python library for natural language processing (NLP). It can be used to preprocess text data, extract features, and train models.
+
+```
+spaCy is compatible with Python 2.7 and 3.5+.
+
+Installation:
+
+pip install spacy
+
+Usage:
+
+import spacy
+
+nlp = spacy.load('en')
+
+doc = nlp(u'This is a sentence.')
+
+for token in doc:
+    print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_,
+          token.shape_, token.is_alpha, token.is_stop)
+
+```
+This is a sentence. this be a sentence. PRON PRP ROOT Xxxxx True False
+
+This outputs the text, lemma, part-of-speech tag, syntactic dependency, shape, and whether the token is alphanumeric or a stopword.
+
+### Gensim 
+is a Python library for topic modeling and text similarity. It can be used to train models, such as word2vec, and to find similar documents.
+Here is an example of using gensim to train a word2vec model:
+
+from gensim.models import word2vec
+```
+# Load text data
+text = ["This is a sentence", "This is another sentence"]
+
+# Train word2vec model
+model = word2vec.Word2Vec(text, size=100, window=5, min_count=1, workers=4)
+
+# Find similar words
+model.wv.most_similar("sentence")
+```
 
 
 
@@ -128,3 +187,5 @@ finder.nbest(collocations.likelihood_ratio, 2)
 4. https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
 5. https://github.com/google-research/text-to-text-transfer-transformer
 6. https://www.itbusinessedge.com/development/what-is-gpt-3/
+7. https://towardsai.net/p/nlp/natural-language-processing-nlp-with-python-tutorial-for-beginners-1f54e610a1a0
+8. 
