@@ -1,5 +1,7 @@
 # tec-CHAT
 
-NLP app done with the Tec1, MINT and Speech chip.   
+A Batural Language Processing (NLP) NINT program to run on the Tec1 with https://github.com/SteveJustin1963/tec-SPEECH
+
+
 
 
