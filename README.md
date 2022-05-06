@@ -65,14 +65,15 @@ We have https://github.com/SteveJustin1963/tec-SPEECH that allows us to make pho
 
 
 ## Ref 
-1. https://en.wikipedia.org/wiki/ELIZA
-2. https://web.njit.edu/~ronkowit/eliza.html
-3. https://towardsdatascience.com/poor-mans-gpt-3-few-shot-text-generation-with-t5-transformer-51f1b01f843e
-4. https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
-5. https://github.com/google-research/text-to-text-transfer-transformer
-6. https://www.itbusinessedge.com/development/what-is-gpt-3/
-7. https://towardsai.net/p/nlp/natural-language-processing-nlp-with-python-tutorial-for-beginners-1f54e610a1a0
-8. https://towardsdatascience.com/introduction-to-natural-language-processing-for-noobs-8f47d0a27fcc
+1. https://en.wikipedia.org/wiki/History_of_natural_language_processing
+2. https://en.wikipedia.org/wiki/ELIZA
+3. https://web.njit.edu/~ronkowit/eliza.html
+4. https://towardsdatascience.com/poor-mans-gpt-3-few-shot-text-generation-with-t5-transformer-51f1b01f843e
+5. https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
+6. https://github.com/google-research/text-to-text-transfer-transformer
+7. https://www.itbusinessedge.com/development/what-is-gpt-3/
+8. https://towardsai.net/p/nlp/natural-language-processing-nlp-with-python-tutorial-for-beginners-1f54e610a1a0
+9. https://towardsdatascience.com/introduction-to-natural-language-processing-for-noobs-8f47d0a27fcc
 
 
 
