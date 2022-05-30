@@ -74,8 +74,10 @@ We have https://github.com/SteveJustin1963/tec-SPEECH that allows us to make pho
 7. https://www.itbusinessedge.com/development/what-is-gpt-3/
 8. https://towardsai.net/p/nlp/natural-language-processing-nlp-with-python-tutorial-for-beginners-1f54e610a1a0
 9. https://towardsdatascience.com/introduction-to-natural-language-processing-for-noobs-8f47d0a27fcc
-
-
+10. https://hackaday.com/tag/tty/, https://www.youtube.com/watch?v=OYJti8dJMV4
+11. https://en.wikipedia.org/wiki/MegaHAL
+12. https://en.wikipedia.org/wiki/Hidden_Markov_model
+13. 
 
 
 
